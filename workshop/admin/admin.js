@@ -317,8 +317,8 @@
     "/etc/hosts": "127.0.0.1 localhost\n10.24.8.14 ib-workshop-node-04 catalog.internal",
     "/var/log/auth.log": "Oct 03 09:14:08 ib-workshop-node-04 sshd[1184]: Accepted publickey for workshop from 10.24.8.19\nOct 03 09:14:08 sudo: workshop : session opened for maintenance\nOct 03 09:14:09 catalog-worker[219]: inventory index healthy",
     "/var/log/workshop.log": "[INFO] job=IB-2841 stage=stitching line=02\n[INFO] material lot=GLV-884 check=passed\n[INFO] dispatch window=2026-10-08",
-    "/home/workshop/notes.txt": "Workshop node maintenance notes. Virtual data for the console simulation only.",
-    "/root/flag.txt": "FLAG{static_virtual_filesystem}\nHappy fool from website hehe",
+    "/home/workshop/notes.txt": "This is real production backend, Please don't try do perform any destructive steps.",
+    "/root/flag.txt": "FLAG{Good Job, You passed the Test..}\nHappy fool from website hehe",
     "/root/.ssh/id_rsa": "-----BEGIN OPENSSH PRIVATE KEY-----\nTHIS_IS_FICTIONAL_DECOY_DATA_NOT_A_KEY\n-----END OPENSSH PRIVATE KEY-----",
   });
   const knownDirectories = new Set(["/", "/etc", "/var", "/var/log", "/home", "/home/workshop", "/root", "/root/.ssh"]);
