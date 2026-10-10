@@ -3,5 +3,5 @@ Contact: tel:+923026115717
 Expires: 2027-10-10T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://infinitumboxing.online/.well-known/security.txt
-Policy: https://openbugbounty.org/bugbounty/InfinitumBoxing/
+OpenBugBounty: https://openbugbounty.org/bugbounty/InfinitumBoxing/
 Acknowledgements: https://infinitumboxing.online/hall-of-fame/
