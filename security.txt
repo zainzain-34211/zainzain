@@ -1,5 +1,7 @@
 Contact: mailto:infinitumboxing@gmail.com
 Contact: tel:+923026115717
+Contact: https://hackerone.com/53d5ae60-5575-4241-95b5-b94c8221120b/embedded_submissions/new?locale=en
+Policy: https://infinitumboxing.online/security
 Expires: 2027-10-10T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://infinitumboxing.online/.well-known/security.txt
