@@ -290,3 +290,79 @@ html.js .reveal.in{opacity:1;transform:none}
   html.js .reveal{opacity:1;transform:none}
   .ticker-track{animation:none}
 }
+
+/* ============================================================
+   MOBILE REPAIR — 2026-10-25 (post-launch fix, CSS only)
+   Diagnosis (360/390/412px audit, text widths measured from the
+   self-hosted Archivo/Inter files):
+   1. Header overflowed: logo (~191px text @1.22rem + mark/gap)
+      + flex gap + "Get a Quote" button ≈ 362px vs 312px of
+      content width at 360px (342px at 390px) → the whole page
+      scrolled sideways on phones.
+   2. Factory photo grid stayed 2-column on phones: ~147px
+      cells, ~110px-wide caption text in very tall skinny cards.
+   3. Sticky quote bar (~81px tall incl. safe-area) vs only
+      64px of body bottom padding → bar covered footer content;
+      its "Get a Quote on WhatsApp" label also wrapped ragged.
+   4. Verification badges: ~138px of text width at 360px →
+      headings wrapped into 2–3-word lines.
+   5. Hero chips became tall multi-line pills; hero-points
+      wrapped with stray divider borders; contact-box buttons
+      (long email / phone labels) nearly overflowed their box.
+   6. Footer / card links were ~24px tall — too small to tap.
+   Desktop rules above are untouched; everything below is
+   scoped to ≤920px / ≤560px.
+   ============================================================ */
+@media(max-width:920px){
+  /* backstop: nothing may ever push the page sideways */
+  body{overflow-x:clip}
+  /* hero points: clean wrap, no stray divider borders */
+  .hero-points{row-gap:8px;column-gap:18px}
+  .hero-points li{border-left:none;padding-left:0}
+}
+@media(max-width:560px){
+  :root{--header-h:60px}
+  .wrap{padding:0 16px}
+  /* (1) header fits: logo ≈156px text + 11px mark + 8px gap,
+     CTA ≈110px, header gap 10px → ≈296px vs 328px available */
+  header.site .wrap{gap:10px}
+  .logo{font-size:1rem;gap:8px}
+  .logo-mark{width:11px;height:11px}
+  nav.main{flex:none}
+  nav.main a.nav-cta{margin-left:0;padding:9px 13px;font-size:.88rem;white-space:nowrap}
+  /* tighter vertical rhythm on phones */
+  section{padding:48px 0}
+  .hero{padding:44px 0 48px}
+  .hero-media::before{inset:12px -8px -8px 12px}
+  /* (5) hero chips: stacked full-width cards, not tall pills */
+  .hero-chips{flex-direction:column;gap:8px;margin-top:20px}
+  .chip{border-radius:12px;padding:9px 14px;font-size:.84rem}
+  /* fact bar: less dead height when stacked */
+  .fact{padding-top:18px;padding-bottom:18px}
+  /* (2) photo grids go single-column */
+  .factory-grid{grid-template-columns:1fr;gap:16px}
+  .factory-grid figcaption{padding:14px 16px;font-size:.93rem}
+  .gallery{grid-template-columns:1fr}
+  /* (4) verification panel + badges get real text width */
+  .verify-panel{padding:24px 18px;gap:24px}
+  .badge{padding:14px;gap:12px}
+  .badge-mark{width:46px;height:46px;font-size:.8rem;border-radius:10px}
+  .badge strong{font-size:.95rem}
+  /* (5) contact-box buttons cannot overflow their box */
+  .contact-box{padding:34px 18px}
+  .contact-box .btn{font-size:.94rem;padding:14px 16px;overflow-wrap:anywhere;text-align:center}
+  /* (3) sticky bar: even button heights, centred labels,
+     and enough body padding that it never covers the footer */
+  .mobile-cta .btn{font-size:.9rem;padding:12px 8px;line-height:1.3;text-align:center;align-items:center}
+  body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+  /* (6) tap targets: footer list links and card links */
+  footer.site li{margin-bottom:2px}
+  footer.site li a{display:inline-block;padding:9px 0}
+  .card p a{display:inline-block;padding:4px 0}
+  /* FAQ rows get the full width for the question text */
+  .faq details{padding:0 18px}
+  /* tables (shared system rules): denser cells if used */
+  table.spec{font-size:.9rem}
+  table.spec th,table.spec td{padding:12px 14px}
+  .btn{max-width:100%}
+}
