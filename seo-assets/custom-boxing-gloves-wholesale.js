@@ -1,4 +1,5 @@
-// Infinitum Boxing — SEO page 2 enhancements (progressive: all content works with JS off).
+// Infinitum Boxing — SEO page 2 enhancements (Ivory Premium redesign, 2026-10-25).
+// Progressive enhancement only: all content works with JS off.
 (function(){
   'use strict';
 
