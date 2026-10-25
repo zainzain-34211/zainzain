@@ -1,3 +1,7 @@
+/* Self-hosted variable fonts (Google Fonts originals, served same-origin per CSP font-src 'self') */
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500 900;font-display:swap;src:url(/seo-assets/fonts/archivo.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(/seo-assets/fonts/inter.woff2) format('woff2')}
+
 :root{
   --bg:#0c0c0e; --panel:#151518; --panel2:#1c1c20; --line:#2a2a30;
   --red:#e01e26; --red-dark:#b30f16; --white:#ffffff; --muted:#b9b9c0; --muted2:#8e8e96;
