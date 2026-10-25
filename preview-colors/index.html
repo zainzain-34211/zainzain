@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colour Options — Infinitum Boxing SEO Page Redesign Preview</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+@font-face{
+  font-family:"Archivo";
+  src:url("../../seo-assets/fonts/archivo.woff2") format("woff2");
+  font-weight:100 900;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:"Inter";
+  src:url("../../seo-assets/fonts/inter.woff2") format("woff2");
+  font-weight:100 900;font-style:normal;font-display:swap;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Inter",system-ui,sans-serif;background:#e9e6df;color:#23211d;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip;
+}
+.page{max-width:1060px;margin:0 auto;padding:40px 20px 64px}
+.page-head{margin-bottom:14px}
+.page-head h1{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(26px,5vw,38px);letter-spacing:-.015em;line-height:1.15}
+.page-head p{color:#5c574c;max-width:680px;margin-top:10px}
+.option{margin-top:44px}
+.option-label{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:14px;
+}
+.option-label h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:20px;letter-spacing:.01em}
+.tag{
+  font-family:"Archivo",sans-serif;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  background:#b08a3e;color:#fff;padding:5px 12px;border-radius:999px;
+}
+.option-label .feel{color:#5c574c;font-size:14.5px;width:100%}
+
+/* ---- The mock itself (colours come from the scheme variables) ---- */
+.mock{
+  background:var(--mbg);color:var(--mtext);
+  border-radius:22px;overflow:hidden;
+  border:1px solid var(--mline);
+  box-shadow:0 24px 48px -24px rgba(20,18,14,.35);
+  font-family:"Inter",system-ui,sans-serif;
+}
+.mock-bar{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:16px 22px;border-bottom:1px solid var(--mline);
+}
+.mock-logo{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:.06em;font-size:15.5px;color:var(--mtext);display:flex;align-items:center;gap:9px;white-space:nowrap}
+.mock-logo::before{content:"";width:11px;height:11px;border:2px solid var(--maccent);transform:rotate(45deg);border-radius:2px;flex:0 0 11px}
+.mock-logo em{font-style:normal;color:var(--maccent)}
+.mock-nav{display:flex;gap:18px;font-size:13px;color:var(--mmuted)}
+.mock-body{padding:38px 22px 42px;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.mock-eyebrow{
+  font-family:"Archivo",sans-serif;font-size:11px;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--maccent);margin-bottom:16px;
+}
+.mock h3{
+  font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(28px,4.6vw,42px);line-height:1.08;color:var(--mtext);
+}
+.mock h3 .hl{color:var(--maccent)}
+.mock-sub{color:var(--mmuted);margin:16px 0 26px;font-size:15.5px;max-width:440px}
+.mbtns{display:flex;flex-wrap:wrap;gap:11px}
+.mbtn{
+  font-family:"Archivo",sans-serif;font-weight:600;font-size:14px;
+  padding:13px 24px;border-radius:999px;display:inline-block;min-height:46px;line-height:20px;
+}
+.mbtn.primary{background:var(--maccent);color:var(--monaccent)}
+.mbtn.ghost{border:1px solid var(--mline);color:var(--mtext)}
+.mock-rating{display:flex;align-items:center;gap:9px;margin-top:22px;font-size:13.5px;color:var(--mmuted)}
+.mock-rating .stars{color:var(--maccent);letter-spacing:.2em;font-size:13px}
+.mock-rating strong{color:var(--mtext);font-family:"Archivo",sans-serif}
+.mock-card{
+  background:var(--msurface);border:1px solid var(--mline);border-radius:18px;overflow:hidden;
+}
+.mock-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.mock-card-body{padding:18px 20px 20px}
+.mock-card-body .stars{color:var(--maccent);letter-spacing:.22em;font-size:12.5px}
+.mock-card-body h4{font-family:"Archivo",sans-serif;font-weight:700;font-size:17px;margin:7px 0 4px;color:var(--mtext)}
+.mock-card-body p{color:var(--mmuted);font-size:13.5px;line-height:1.55}
+.mock-card-body .specrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.mock-card-body .spec{
+  font-size:11.5px;font-weight:600;border:1px solid var(--mline);border-radius:999px;
+  padding:5px 11px;color:var(--mtext);
+}
+
+/* ---- Palette swatches ---- */
+.palette{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.swatch{
+  display:flex;align-items:center;gap:8px;background:#f4f1ea;border:1px solid #d9d4c7;
+  border-radius:999px;padding:6px 13px 6px 7px;font-size:12.5px;color:#3c382f;
+}
+.swatch i{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.14);flex:0 0 18px}
+.swatch b{font-family:"Archivo",sans-serif;font-weight:700}
+.swatch code{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#6d675b}
+
+.page-foot{margin-top:52px;color:#5c574c;font-size:14.5px;border-top:1px solid #d5d0c3;padding-top:20px}
+
+/* ---- Schemes ---- */
+.scheme-a{
+  --mbg:#faf7f1; --msurface:#fffdf8; --mtext:#1c1a17; --mmuted:#7e7666;
+  --maccent:#b08a3e; --monaccent:#fffdf8; --mline:#e4dac4;
+}
+.scheme-b{
+  --mbg:#0d2b23; --msurface:#123a2e; --mtext:#f2ecdd; --mmuted:#a9bda6;
+  --maccent:#c9a24f; --monaccent:#0d2b23; --mline:#1e4636;
+}
+.scheme-c{
+  --mbg:#17181c; --msurface:#202127; --mtext:#eceef2; --mmuted:#8e939e;
+  --maccent:#d7ff3e; --monaccent:#17181c; --mline:#2d2f38;
+}
+
+@media (max-width:720px){
+  .mock-body{grid-template-columns:1fr;padding:30px 18px 34px}
+  .mock-nav{display:none}
+  .mock-bar{padding:14px 18px}
+  .mbtns .mbtn{flex:1 1 100%;text-align:center}
+  .page{padding:28px 14px 48px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="page-head">
+    <h1>SEO Page Redesign — Colour Options</h1>
+    <p>The same page, three colour directions. Each mock shows the hero, the rating line and a product card exactly as they would look in that scheme. Pick A, B or C — the chosen scheme will be applied to the full page design.</p>
+  </div>
+
+  <!-- ============ OPTION A ============ -->
+  <div class="option">
+    <div class="option-label">
+      <h2>Option A — Ivory Premium</h2>
+      <span class="tag">Recommended</span>
+      <p class="feel">Light, warm and spacious. The premium-catalogue look used by high-end DTC brands — the colour comes from the photography, the page itself stays calm and expensive-feeling.</p>
+    </div>
+    <div class="mock scheme-a">
+      <div class="mock-bar">
+        <span class="mock-logo">INFINITUM <em>BOXING</em></span>
+        <span class="mock-nav"><span>Materials</span><span>Glove Styles</span><span>Who We Supply</span><span>FAQ</span></span>
+        <span class="mbtn primary" style="padding:9px 18px;min-height:40px;font-size:13px">Get a Quote</span>
+      </div>
+      <div class="mock-body">
+        <div>
+          <p class="mock-eyebrow">Sialkot-Made · Private Label &amp; OEM</p>
+          <h3>Private Label <span class="hl">Boxing Gloves</span> Manufacturer</h3>
+          <p class="mock-sub">Your brand on the gloves. Our factory behind them — custom gloves made in Sialkot for brands, gyms and distributors in the USA, Europe and worldwide.</p>
+          <div class="mbtns">
+            <span class="mbtn primary">Get a Quote on WhatsApp</span>
+            <span class="mbtn ghost">Browse the Full Range</span>
+          </div>
+          <p class="mock-rating"><span class="stars">★★★★★</span><span><strong>4.5 out of 5</strong> on Google — 12 buyer reviews</span></p>
+        </div>
+        <div class="mock-card">
+          <img src="../../seo-assets/images/factory-stitching-1.jpg" alt="Boxing glove being stitched at the Infinitum Boxing factory in Sialkot">
+          <div class="mock-card-body">
+            <span class="stars">★★★★★</span>
+            <h4>Training &amp; Sparring Gloves</h4>
+            <p>The core of any label — all-purpose gloves built for daily gym work and sparring, with your logo and colours.</p>
+            <div class="specrow"><span class="spec">8oz–20oz</span><span class="spec">Cowhide / Synthetic</span><span class="spec">Your logo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="palette">
+      <span class="swatch"><i style="background:#faf7f1"></i><b>Background</b><code>#faf7f1</code></span>
+      <span class="swatch"><i style="background:#f5f0e6"></i><b>Soft section</b><code>#f5f0e6</code></span>
+      <span class="swatch"><i style="background:#fffdf8"></i><b>Card surface</b><code>#fffdf8</code></span>
+      <span class="swatch"><i style="background:#1c1a17"></i><b>Ink text</b><code>#1c1a17</code></span>
+      <span class="swatch"><i style="background:#7e7666"></i><b>Muted text</b><code>#7e7666</code></span>
+      <span class="swatch"><i style="background:#b08a3e"></i><b>Brass accent</b><code>#b08a3e</code></span>
+      <span class="swatch"><i style="background:#8f6f2f"></i><b>Brass hover</b><code>#8f6f2f</code></span>
+      <span class="swatch"><i style="background:#e4dac4"></i><b>Border</b><code>#e4dac4</code></span>
+    </div>
+  </div>
+
+  <!-- ============ OPTION B ============ -->
+  <div class="option">
+    <div class="option-label">
+      <h2>Option B — Deep Emerald + Cream</h2>
+      <p class="feel">Dark, but a completely different mood from navy — deep green with warm cream type and brass. Classic, heritage, “established house” feel.</p>
+    </div>
+    <div class="mock scheme-b">
+      <div class="mock-bar">
+        <span class="mock-logo">INFINITUM <em>BOXING</em></span>
+        <span class="mock-nav"><span>Materials</span><span>Glove Styles</span><span>Who We Supply</span><span>FAQ</span></span>
+        <span class="mbtn primary" style="padding:9px 18px;min-height:40px;font-size:13px">Get a Quote</span>
+      </div>
+      <div class="mock-body">
+        <div>
+          <p class="mock-eyebrow">Sialkot-Made · Private Label &amp; OEM</p>
+          <h3>Private Label <span class="hl">Boxing Gloves</span> Manufacturer</h3>
+          <p class="mock-sub">Your brand on the gloves. Our factory behind them — custom gloves made in Sialkot for brands, gyms and distributors in the USA, Europe and worldwide.</p>
+          <div class="mbtns">
+            <span class="mbtn primary">Get a Quote on WhatsApp</span>
+            <span class="mbtn ghost">Browse the Full Range</span>
+          </div>
+          <p class="mock-rating"><span class="stars">★★★★★</span><span><strong>4.5 out of 5</strong> on Google — 12 buyer reviews</span></p>
+        </div>
+        <div class="mock-card">
+          <img src="../../seo-assets/images/factory-stitching-1.jpg" alt="Boxing glove being stitched at the Infinitum Boxing factory in Sialkot">
+          <div class="mock-card-body">
+            <span class="stars">★★★★★</span>
+            <h4>Training &amp; Sparring Gloves</h4>
+            <p>The core of any label — all-purpose gloves built for daily gym work and sparring, with your logo and colours.</p>
+            <div class="specrow"><span class="spec">8oz–20oz</span><span class="spec">Cowhide / Synthetic</span><span class="spec">Your logo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="palette">
+      <span class="swatch"><i style="background:#0d2b23"></i><b>Background</b><code>#0d2b23</code></span>
+      <span class="swatch"><i style="background:#123a2e"></i><b>Card surface</b><code>#123a2e</code></span>
+      <span class="swatch"><i style="background:#f2ecdd"></i><b>Cream text</b><code>#f2ecdd</code></span>
+      <span class="swatch"><i style="background:#a9bda6"></i><b>Muted text</b><code>#a9bda6</code></span>
+      <span class="swatch"><i style="background:#c9a24f"></i><b>Brass accent</b><code>#c9a24f</code></span>
+      <span class="swatch"><i style="background:#1e4636"></i><b>Border</b><code>#1e4636</code></span>
+    </div>
+  </div>
+
+  <!-- ============ OPTION C ============ -->
+  <div class="option">
+    <div class="option-label">
+      <h2>Option C — Graphite + Silver</h2>
+      <p class="feel">Modern athletic graphite with silver-grey type and one electric volt accent used sparingly — the “performance tech” direction.</p>
+    </div>
+    <div class="mock scheme-c">
+      <div class="mock-bar">
+        <span class="mock-logo">INFINITUM <em>BOXING</em></span>
+        <span class="mock-nav"><span>Materials</span><span>Glove Styles</span><span>Who We Supply</span><span>FAQ</span></span>
+        <span class="mbtn primary" style="padding:9px 18px;min-height:40px;font-size:13px">Get a Quote</span>
+      </div>
+      <div class="mock-body">
+        <div>
+          <p class="mock-eyebrow">Sialkot-Made · Private Label &amp; OEM</p>
+          <h3>Private Label <span class="hl">Boxing Gloves</span> Manufacturer</h3>
+          <p class="mock-sub">Your brand on the gloves. Our factory behind them — custom gloves made in Sialkot for brands, gyms and distributors in the USA, Europe and worldwide.</p>
+          <div class="mbtns">
+            <span class="mbtn primary">Get a Quote on WhatsApp</span>
+            <span class="mbtn ghost">Browse the Full Range</span>
+          </div>
+          <p class="mock-rating"><span class="stars">★★★★★</span><span><strong>4.5 out of 5</strong> on Google — 12 buyer reviews</span></p>
+        </div>
+        <div class="mock-card">
+          <img src="../../seo-assets/images/factory-stitching-1.jpg" alt="Boxing glove being stitched at the Infinitum Boxing factory in Sialkot">
+          <div class="mock-card-body">
+            <span class="stars">★★★★★</span>
+            <h4>Training &amp; Sparring Gloves</h4>
+            <p>The core of any label — all-purpose gloves built for daily gym work and sparring, with your logo and colours.</p>
+            <div class="specrow"><span class="spec">8oz–20oz</span><span class="spec">Cowhide / Synthetic</span><span class="spec">Your logo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="palette">
+      <span class="swatch"><i style="background:#17181c"></i><b>Background</b><code>#17181c</code></span>
+      <span class="swatch"><i style="background:#202127"></i><b>Card surface</b><code>#202127</code></span>
+      <span class="swatch"><i style="background:#eceef2"></i><b>Text</b><code>#eceef2</code></span>
+      <span class="swatch"><i style="background:#c9ccd4"></i><b>Silver</b><code>#c9ccd4</code></span>
+      <span class="swatch"><i style="background:#8e939e"></i><b>Muted text</b><code>#8e939e</code></span>
+      <span class="swatch"><i style="background:#d7ff3e"></i><b>Volt accent</b><code>#d7ff3e</code></span>
+      <span class="swatch"><i style="background:#2d2f38"></i><b>Border</b><code>#2d2f38</code></span>
+    </div>
+  </div>
+
+  <p class="page-foot">Preview only — nothing here is live. Option A is already built as the full page (all sections, FAQs, reviews and factory photos). Options B and C show the same page in their colours; whichever is picked gets the full build.</p>
+
+</div>
+</body>
+</html>
