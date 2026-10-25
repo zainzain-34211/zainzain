@@ -72,6 +72,16 @@ footer.site li{margin-bottom:9px}
 footer.site a{text-decoration:none}
 footer.site a:hover{color:#fff}
 .foot-bottom{border-top:1px solid var(--line);padding-top:22px;color:var(--muted2);font-size:.85rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.nav-tel{color:#fff !important;font-weight:700}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table.spec{width:100%;border-collapse:collapse;background:var(--panel2);font-size:.95rem;min-width:560px}
+section:not(.alt) table.spec{background:var(--panel)}
+table.spec th,table.spec td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+table.spec thead th{font-family:'Archivo',sans-serif;font-size:.92rem;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:rgba(224,30,38,.14)}
+table.spec tbody tr:last-child td{border-bottom:none}
+table.spec td{color:var(--muted)}
+table.spec td strong{color:#fff}
+p.note{color:var(--muted);font-size:.95rem;margin-top:16px;max-width:46rem}
 @media(max-width:920px){
   .hero-grid{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr 1fr}
