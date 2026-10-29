@@ -93,7 +93,7 @@ nav.main .btn{color:#fff}
 .cols2 p{color:#4c463c}
 .fstrip{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:26px}
 .fstrip figure{border-radius:var(--r);overflow:hidden;background:var(--card)}
-.fstrip img{width:100%;object-fit:cover}
+.fstrip img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .fstrip figcaption{padding:12px 16px;font-size:13.5px;color:var(--muted)}
 .honest{border:1.5px dashed var(--brass);border-radius:var(--r);padding:24px 26px;background:#fffdf7}
 .honest p{margin:0;color:#4c463c}
