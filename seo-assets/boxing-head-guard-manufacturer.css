@@ -196,3 +196,16 @@ nav.main .btn{color:#fff}
   .mcta{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:80;background:rgba(250,247,241,.96);border-top:1px solid var(--line);padding:10px 12px}
   .mcta .btn{flex:1;padding:12px 8px;font-size:14px}
 }
+
+/* Interactive 3D pilot (Three.js) */
+.guard3d{margin-top:34px;border:1px solid var(--line);border-radius:var(--r);background:radial-gradient(720px 340px at 50% -10%,rgba(176,138,62,.13),transparent 65%),linear-gradient(180deg,#fffdf8,var(--bg2));padding:22px 22px 16px}
+.g3d-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px 26px;flex-wrap:wrap;margin-bottom:8px}
+.g3d-title{font-size:21px;margin:0}
+.g3d-hint{font-size:14px;color:var(--muted);margin:0;max-width:560px}
+.g3d-stage{position:relative;height:460px;border-radius:10px;overflow:hidden}
+.g3d-stage canvas{display:block;width:100%;height:100%;cursor:grab}
+.g3d-stage canvas:active{cursor:grabbing}
+.g3d-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px}
+.g3d-fallback img{height:100%;width:auto;max-width:100%;object-fit:contain}
+.guard3d.g3d-on .g3d-fallback{display:none}
+@media(max-width:960px){.g3d-stage{height:360px}}
