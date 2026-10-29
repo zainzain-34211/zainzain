@@ -1,6 +1,6 @@
 /* Infinitum Boxing — SEO page 6: Boxing Head Guard Manufacturer (fresh layout) */
-@font-face{font-family:'Archivo';src:url(/seo-assets/fonts/Archivo-var-latin.woff2) format('woff2');font-weight:100 900;font-display:swap}
-@font-face{font-family:'Inter';src:url(/seo-assets/fonts/Inter-var-latin.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Archivo';src:url(/seo-assets/fonts/archivo.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Inter';src:url(/seo-assets/fonts/inter.woff2) format('woff2');font-weight:100 900;font-display:swap}
 :root{
   --bg:#faf7f1; --bg2:#f5f0e6; --ink:#1c1a17; --muted:#6a6257; --line:#e6ddcd;
   --brass:#b08a3e; --card:#ffffff; --deep:#241c11; --deep2:#171208;
@@ -40,8 +40,7 @@ a:hover{text-decoration:underline}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.05em;color:var(--ink)}
 .logo b{color:var(--brass)}
 .logo:hover{text-decoration:none}
-.logo-mark{width:30px;height:30px;border-radius:50%;background:var(--deep);position:relative;flex:none}
-.logo-mark::after{content:"";position:absolute;inset:8px;border:2px solid var(--brass);border-radius:50%}
+.logo-img{height:34px;width:auto;flex:none;display:block}
 nav.main{display:flex;align-items:center;gap:20px}
 nav.main a{font-family:var(--display);font-size:13.5px;font-weight:600;color:var(--ink)}
 nav.main a:hover{color:var(--brass);text-decoration:none}

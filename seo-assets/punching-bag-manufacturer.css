@@ -28,8 +28,7 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.94);bac
 header.top .wrap{display:flex;align-items:center;gap:26px;min-height:66px}
 .logo{font-family:'Archivo',sans-serif;font-weight:800;font-size:19px;letter-spacing:.04em;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
 .logo b{color:var(--brass);font-weight:800}
-.logo-mark{width:30px;height:30px;border-radius:9px;background:var(--bronze);position:relative;flex:none}
-.logo-mark::after{content:"IB";position:absolute;inset:0;display:grid;place-items:center;color:var(--bronze-ink);font-size:11px;font-weight:800;letter-spacing:.06em}
+.logo-img{height:34px;width:auto;flex:none;display:block}
 nav.main{margin-left:auto;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 nav.main a{color:var(--ink2);text-decoration:none;font-size:14.5px;font-weight:500}
 nav.main a:hover{color:var(--ink)}
