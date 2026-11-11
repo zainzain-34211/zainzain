@@ -209,3 +209,14 @@ nav.main .btn{color:#fff}
 .g3d-fallback img{height:100%;width:auto;max-width:100%;object-fit:contain}
 .guard3d.g3d-on .g3d-fallback{display:none}
 @media(max-width:960px){.g3d-stage{height:360px}}
+
+/* Related manufacturer pages — cross-linking section (added 2026-11-11) */
+.relpages{background:var(--bg2,var(--bg-soft,#f5f0e6));padding:56px 0;border-top:1px solid var(--line,#e4dac4)}
+.relpages-eyebrow{font-family:var(--font-b,"Inter",system-ui,sans-serif);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass,#b08a3e);font-weight:700;margin:0 0 8px}
+.relpages h2{font-family:var(--font-h,"Archivo","Inter",sans-serif);color:var(--ink,#1c1a17);margin:0 0 10px}
+.relpages-intro{color:var(--muted,#7e7666);max-width:640px;margin:0 0 26px}
+.relpages-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.relpages-grid li{background:var(--card,var(--panel,#fffdf8));border:1px solid var(--line,#e4dac4);border-radius:14px;padding:16px 18px}
+.relpages-grid a{font-family:var(--font-h,"Archivo","Inter",sans-serif);font-weight:700;color:var(--ink,#1c1a17);text-decoration:none}
+.relpages-grid a:hover{color:var(--brass,#b08a3e);text-decoration:underline}
+.relpages-grid span{display:block;margin-top:6px;font-size:.92rem;line-height:1.5;color:var(--muted,#7e7666)}
